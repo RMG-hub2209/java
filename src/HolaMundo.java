@@ -80,6 +80,7 @@ public class HolaMundo {
     }
 }*/
 
+/*
 public class HolaMundo {
     public static void main(String[] args) {
         System.out.println("Ingrese su nombre: ");
@@ -90,5 +91,44 @@ public class HolaMundo {
         //con este método, podemos leer dicha información
         var usuario = consola.nextLine();
         System.out.println("Su nombre es " + usuario);
+    }
+}*/
+
+//TIPOS DE DATOS ENTEROS
+public class HolaMundo {
+    public static void main(String[] args) {
+        //TIPO BYTE
+        /*
+        EN este caso, estamos obligando al programa a convertir 1000 a byte, pero
+        como byte solo admite valores de -127 a 128, 1000 no puede ser de tipo byte,
+        por lo que anteponemos el tipo "bite" entre paréntesis, para convertirlo a byte,
+        pero al  compilar el programa, no se imprime el valor de mil, sino -24
+        byte numeroByte = (byte)1000;
+        System.out.println(numeroByte) => -24;*/
+
+        byte numeroByte = 10;
+        System.out.println(numeroByte);
+        //Estos métodos permiten saber los valores mínimos o máximos que tolera un tipo de dato
+        System.out.println("Valor mínimo byte: " + Byte.MIN_VALUE);
+        System.out.println("Valor máximo byte: " + Byte.MAX_VALUE);
+
+        //TIPO SHORT
+
+        short numeroShort = 100;
+        System.out.println(numeroShort);
+        System.out.println("Numero short min: " + Short.MIN_VALUE);
+        System.out.println("Numero short max: " + Short.MAX_VALUE);
+
+        //TIPO INTEGER
+        int numeroInteger = 100;
+        System.out.println("numeroInteger = " + numeroInteger);
+        System.out.println("Número integer min: " + Integer.MIN_VALUE);
+        System.out.println("Número integer max: " + Integer.MAX_VALUE);
+
+        //TIPO LONG
+        int numeroLong = 100;
+        System.out.println("numeroLong = " + numeroLong);
+        System.out.println("Número long min: " + Long.MIN_VALUE);
+        System.out.println("Número long max: " + Long.MAX_VALUE);
     }
 }
